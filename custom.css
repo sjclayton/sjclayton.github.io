@@ -1,3 +1,9 @@
-h1 {
-    color: seagreen;
+// Custom CSS goes here!
+
+.content-wrapper {
+    margin: 15% 5%; 
+}
+
+.row-override {
+    margin: 15% 5% 15% 5%;
 }
