@@ -3,3 +3,11 @@
 .row-override {
     margin: 15% 5%;
 }
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: grey;
+}
