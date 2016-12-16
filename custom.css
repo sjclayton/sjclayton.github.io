@@ -8,6 +8,10 @@ a {
     color: black;
 }
 
-a:hover {
+a:visited {
+    color: black;
+}
+
+a:active, a:hover {
     color: grey;
 }
