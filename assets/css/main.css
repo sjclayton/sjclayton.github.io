@@ -1,27 +1,28 @@
 /* Custom CSS goes here! */
 
 .vertical-center {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 #footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 90px;
-    background-color: lightgrey;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  background-color: lightgrey;
 }
 
 a {
-    color: black;
+  color: black;
 }
 
 a:visited {
-    color: black;
+  color: black;
 }
 
-a:active, a:hover {
-    color: dimgrey;
+a:active,
+a:hover {
+  color: dimgrey;
 }
