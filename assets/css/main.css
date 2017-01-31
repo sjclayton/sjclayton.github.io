@@ -24,7 +24,6 @@
 
 .footer h5 {
   margin-top: 18px;
-  align-content: center;
 }
 
 a {
@@ -38,4 +37,40 @@ a:visited {
 a:active,
 a:hover {
   color: lightgrey;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    height: 90px;
+    text-align: center;
+  }
+  .footer h5 {
+    margin-top: 0;
+  }
+}
+
+
+.text-justify-xs {
+    text-align: center;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .text-justify-sm {
+        text-align: right;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .text-justify-md {
+        text-align: right;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .text-justify-lg {
+        text-align: right;
+    }
 }
