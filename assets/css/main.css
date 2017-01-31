@@ -6,74 +6,117 @@
   align-items: center;
 }
 
-.navbar-default {
-  background-color: darkgreen;
-  border-color: black;
+#about {
+  padding-top: 90px;
 }
+
+body {
+  background-color: green;
+}
+
+.jumbotron {
+  background-color: lightgrey;
+}
+
+.navbar-default {
+  height: 54px;
+  background-color: darkgreen;
+  border-bottom: 4px solid black;
+}
+
 .navbar-default .navbar-brand {
   color: white;
-  text-transform: uppercase;;
+  text-transform: uppercase;
 }
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: lightgrey;
 }
+
 .navbar-default .navbar-text {
   color: white;
 }
+
 .navbar-default .navbar-nav > li > a {
   color: white;
 }
+
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: lightgrey;
 }
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: black;
   background-color: lightgreen;
 }
+
+.navbar-default .navbar-nav > li {
+  background-color: darkgreen;
+}
+
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   color: black;
-  background-color: darkgreen;
+  background-color: green;
 }
+
 .navbar-default .navbar-toggle {
   border-color: black;
 }
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: green;
 }
+
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #ecf0f1;
+  background-color: white;
 }
+
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #ecf0f1;
+  border-color: black;
 }
+
 .navbar-default .navbar-link {
-  color: #ecf0f1;
+  color: white;
 }
+
 .navbar-default .navbar-link:hover {
-  color: #ffbbbc;
+  color: lightgrey;
+}
+
+.collapsing {
+  border-top: 2px solid black;
+}
+
+.collapse.in {
+  border-top: 2px solid black;
+}
+
+.navbar-collapse > ul {
+  margin-top: 0;
+  border-bottom: 2px solid black;
 }
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #ecf0f1;
+    color: white;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #ffbbbc;
+    color: lightgrey;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #ffbbbc;
-    background-color: #c0392b;
+    color: black;
+    background-color: lightgreen;
   }
 }
 
@@ -83,7 +126,8 @@
   padding-top: 0;
   margin-top: 0;
   width: 100%;
-  height: 45px;
+  height: 52px;
+  border-top: 4px solid black;
   color: white;
   background-color: darkgreen;
 }
@@ -118,26 +162,22 @@ a:hover {
   }
 }
 
-
 .text-justify-xs {
     text-align: center;
 }
 
-/* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .text-justify-sm {
         text-align: right;
     }
 }
 
-/* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .text-justify-md {
         text-align: right;
     }
 }
 
-/* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .text-justify-lg {
         text-align: right;
