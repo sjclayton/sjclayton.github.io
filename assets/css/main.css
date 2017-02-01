@@ -15,7 +15,7 @@ body {
 }
 
 .jumbotron {
-  background-color: lightgrey;
+  background-color: white;
 }
 
 .navbar-default {
@@ -51,11 +51,11 @@ body {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: black;
-  background-color: lightgreen;
+  background-color: #30cd28;
 }
 
 .navbar-default .navbar-nav > li {
-  background-color: darkgreen;
+  background-color: green;
 }
 
 .navbar-default .navbar-nav > .open > a,
@@ -67,11 +67,12 @@ body {
 
 .navbar-default .navbar-toggle {
   border-color: black;
+  background-color: green;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: green;
+  background-color: #30cd28;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -116,7 +117,7 @@ body {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: black;
-    background-color: lightgreen;
+    background-color: #30cd28;
   }
 }
 
