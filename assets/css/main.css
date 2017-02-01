@@ -43,6 +43,8 @@ body {
 .navbar-default .navbar-nav > li > a {
   color: white;
   min-width: 150px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
   text-align: center;
   text-shadow: 2px 2px 4px black;
 }
@@ -133,6 +135,15 @@ body {
 #link-list {
   margin-top: -12px;
   padding-right: 10px;
+}
+
+#body-link {
+  color: black;
+}
+
+#body-link:hover,
+#body-link:focus {
+  color: darkgrey;
 }
 
 .footer h5 {
