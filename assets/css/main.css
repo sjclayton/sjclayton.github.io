@@ -28,7 +28,6 @@ body {
 .navbar-default .navbar-brand {
   font-weight: bold;
   font-size: 40px;
-  /* color: #05e707; */
   color: white;
 }
 
@@ -43,6 +42,8 @@ body {
 
 .navbar-default .navbar-nav > li > a {
   color: white;
+  min-width: 150px;
+  text-align: center;
   text-shadow: 2px 2px 4px black;
 }
 
@@ -94,14 +95,6 @@ body {
 
 .navbar-default .navbar-link:hover {
   color: lightgrey;
-}
-
-.collapsing {
-  border-top: 2px solid black;
-}
-
-.collapse.in {
-  border-top: 2px solid black;
 }
 
 .navbar-collapse > ul {

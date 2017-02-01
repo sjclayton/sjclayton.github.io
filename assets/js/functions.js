@@ -3,10 +3,10 @@ $(".nav li").on("click", function() {
       $(this).addClass("active");
 });
 
-$(function(){ 
-     var navMain = $(".navbar-collapse");
+$(function(){
+     var navMobile = $(".navbar-collapse");
 
-     navMain.on("click", "a", null, function () {
-         navMain.collapse('hide');
+     navMobile.on("click", "a", null, function () {
+         navMobile.collapse('hide');
      });
- });
+});
