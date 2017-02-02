@@ -120,11 +120,6 @@ body {
   color: #111111;
 }
 
-#body-link:hover,
-#body-link:focus {
-  color: darkgrey;
-}
-
 .footer h5 {
   margin-top: 14px;
 }
