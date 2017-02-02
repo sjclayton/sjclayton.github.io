@@ -18,16 +18,24 @@
 
 #contact {
   padding-top: 15vh;
-  padding-bottom: 60vh;
+  padding-bottom: 40vh;
+}
+
+@media (max-width: 767px) {
+  #contact {
+    padding-bottom: 0;
+  }
 }
 
 @media (min-width: 768px) {
-  #about, #portfolio {
+  #about, #portfolio, #contact {
     width: 90%;
   }
+}
 
+@media (min-width: 992px) {
   #contact {
-    width: 50%
+    width: 45%;
   }
 }
 
@@ -136,15 +144,14 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   width: 100%;
-  height: 52px;
+  height: 56px;
   font-variant: small-caps;
-  border-top: 4px solid #111;
   color: #fff;
   background-color: #111;
 }
 
 #link-list {
-  margin-top: -16px;
+  margin-top: -12px;
 }
 
 #body-link {
@@ -152,7 +159,7 @@ body {
 }
 
 .footer h5 {
-  margin-top: 14px;
+  margin-top: 18px;
 }
 
 a,
