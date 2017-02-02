@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.stats-wrapper {
+  margin: 75px 50px;
+}
+
 #about {
   padding-top: 90px;
 }
