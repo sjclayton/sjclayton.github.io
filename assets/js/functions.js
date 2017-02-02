@@ -14,7 +14,7 @@ $(".navbar-smooth li a[href^='#']").on('click', function(event) {
 
   return $('html, body').animate({
     scrollTop: $(this.hash).offset().top
-  }, 500, function() {
+  }, 700, function() {
     return window.history.pushState(null, null, target);
   });
 });
