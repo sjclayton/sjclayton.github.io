@@ -41,7 +41,7 @@
 
 body {
   background-image: url(/assets/img/background.jpg);
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .jumbotron {
@@ -62,6 +62,7 @@ body {
 }
 
 .navbar-default .navbar-brand {
+  margin-top: 5px;
   font-weight: bold;
   font-size: 40px;
   color: #fff;
@@ -78,10 +79,11 @@ body {
 
 .navbar-default .navbar-nav > li > a {
   color: #fff;
-  min-width: 150px;
+  min-width: 100px;
   border: 3px solid #111;;
   border-radius: 6px;
-  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -94,7 +96,8 @@ body {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  text-shadow: -1px -1px 2px #111, 2px 2px 4px #111;
+  /*text-shadow: 1px 1px 10px #111;*/
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 1);
   color: #fff;
   background-color: #05e707;
 }
@@ -105,7 +108,8 @@ body {
 }
 
 .navbar-default .navbar-toggle {
-  border-color: #111;
+  margin-top: 15px;
+  border: 0;
   background-color: #05e707;
 }
 
@@ -145,7 +149,7 @@ body {
   margin-bottom: 0;
   width: 100%;
   height: 56px;
-  font-variant: small-caps;
+  text-transform: uppercase;
   color: #fff;
   background-color: #111;
 }
@@ -154,21 +158,25 @@ body {
   margin-top: -12px;
 }
 
-#body-link {
-  color: #fff;
-}
-
 .footer h5 {
+  font-size: 16px;
   margin-top: 18px;
 }
 
-a,
-a:visited {
+#contact a, a:visited {
+  text-decoration: underline;
   color: #fff;
 }
 
-a:active,
-a:hover {
+#contact a:hover {
+  color: #aaa;
+}
+
+body a {
+  color: #fff;
+}
+
+body a:active, a:hover {
   color: #aaa;
 }
 
