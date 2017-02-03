@@ -3,7 +3,15 @@ $(function(){
 
      navMobile.on("click", "a", null, function () {
          navMobile.collapse('hide');
-     });
+     })
+
+     var waypoint = $('#portfolio').waypoint(function(direction) {
+       $('#fds img').each(function(i) {
+         $(this).delay((i++) * 300).fadeTo(1000, 1); });
+     }, {
+       offset: '50%'
+     })
+
 });
 
 $(".navbar-smooth li a[href^='#']").on('click', function(event) {
