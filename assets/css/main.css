@@ -12,9 +12,27 @@ padding-bottom:45vh;
 padding-top:15vh;
 }
 
+#portfolio li {
+margin: 20px 2px;
+padding: 0;
+}
+
+#portfolio img {
+padding: 5px;
+}
+
 #contact {
 padding-bottom:40vh;
 padding-top:15vh;
+}
+
+#contact a,a:visited {
+color:#fff;
+text-decoration:underline;
+}
+
+#contact a:hover {
+color:#aaa;
 }
 
 body {
@@ -23,9 +41,14 @@ font-family:'Roboto Mono', monospace;
 }
 
 .jumbotron {
-background-color:#111;
+background-color:#222;
 border:6px solid #fff;
 color:#fff;
+}
+
+.well {
+background-color: #333;
+border: 0;
 }
 
 #headshot {
@@ -34,7 +57,6 @@ border-radius:6px;
 }
 
 #thumbimg {
-margin: 25px;
 border:2px solid #fff;
 border-radius:6px;
 }
@@ -44,8 +66,8 @@ opacity: 0;
 }
 
 .navbar-default {
-background-color:#111;
-border-bottom:4px solid #111;
+background-color:#222;
+border-bottom:4px solid #222;
 height:63px;
 }
 
@@ -65,8 +87,8 @@ color:#fff;
 }
 
 .navbar-default .navbar-nav > li > a {
-background-color: #111;
-border:3px solid #111;
+background-color: #222;
+border:3px solid #222;
 border-radius:6px;
 color:#fff;
 font-family:Rubik, sans-serif;
@@ -89,7 +111,7 @@ text-shadow:0 2px 1px rgba(0,0,0,1);
 }
 
 .navbar-default .navbar-nav > li {
-background-color:#111;
+background-color:#222;
 padding-top:3px;
 }
 
@@ -108,7 +130,7 @@ background-color:#fff;
 }
 
 .navbar-default .navbar-collapse,.navbar-default .navbar-form {
-border-color:#111;
+border-color:#222;
 }
 
 .navbar-default .navbar-link {
@@ -120,7 +142,7 @@ color:#fff;
 }
 
 .navbar-collapse > ul {
-border-bottom:2px solid #111;
+border-bottom:2px solid #222;
 margin-bottom:0;
 margin-top:0;
 }
@@ -131,11 +153,11 @@ width: 100%;
 
 .nav-tabs > li > a:hover {
 background-color: #fff;
-color: #111;
+color: #222;
 }
 
 .footer {
-background:#111;
+background:#222;
 bottom:0;
 color:#fff;
 height:56px;
@@ -186,15 +208,6 @@ margin-right: -3px;
 margin-top: -3px;
 }
 
-#contact a,a:visited {
-color:#fff;
-text-decoration:underline;
-}
-
-#contact a:hover {
-color:#aaa;
-}
-
 body a {
 color:#fff;
 }
@@ -206,9 +219,6 @@ color:#aaa;
 @media (max-width: 767px) {
 #contact {
 padding-bottom:0;
-}
-#thumbimg {
-margin-left: 0;
 }
 }
 
@@ -223,8 +233,12 @@ text-align:center;
 margin-top:0;
 }
 
-.footer .text-justify {
+.text-justify {
 text-align: center;
+}
+
+.well {
+margin: 20px;
 }
 }
 
@@ -237,7 +251,6 @@ width:90%;
 @media (min-width: 992px) {
 #contact {
 width:45%;
-}
 }
 
 .text-justify {
