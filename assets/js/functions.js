@@ -15,7 +15,7 @@ $(function(){
      })
 
      //Tooltips for link titles
-     $('a').tooltip({placement: 'top'})
+     $('a').tooltip({placement: 'top', trigger: 'hover'})
 });
 
 //Smooth scrolling

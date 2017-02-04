@@ -148,7 +148,7 @@ width:100%;
 }
 
 #link-list {
-margin-top:-14px;
+margin-top:-12px;
 }
 
 a.twit:hover {
@@ -199,7 +199,7 @@ body a {
 color:#fff;
 }
 
-body a:active,a:hover {
+body a:hover {
 color:#aaa;
 }
 
