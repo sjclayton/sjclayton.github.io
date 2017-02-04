@@ -12,7 +12,7 @@ padding-bottom:45vh;
 padding-top:15vh;
 }
 
-#portfolio li {
+#portfolio .tab-pane li {
 margin: 20px 2px;
 padding: 0;
 }
