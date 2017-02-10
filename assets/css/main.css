@@ -1,5 +1,9 @@
 #stats {
-margin-top:8vh;
+margin-top:5vh;
+}
+
+#stats a{
+text-decoration: underline;
 }
 
 #start {
