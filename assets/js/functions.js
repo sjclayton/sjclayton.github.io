@@ -1,9 +1,10 @@
 $(function(){
      //Preloader
      $(window).on('load', function() {
-       $('#loading').delay(1000).fadeOut('slow', function (){
+       $('#loading').delay(1000).hide(function (){
          $('.navbar-default').css('display', 'inline');
          $('.navbar-default').addClass('animated fadeInDown');
+         $('#start').addClass('animated fadeIn');
        });
      })
 

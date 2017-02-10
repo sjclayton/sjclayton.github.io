@@ -4,6 +4,7 @@ margin-top:8vh;
 
 #start {
 padding-top:20vh;
+opacity:0;
 }
 
 #first, #middle, #last {
