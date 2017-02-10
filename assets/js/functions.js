@@ -70,6 +70,11 @@ $(function(){
      }).blur(function(){
         $(this).attr('placeholder',$(this).data('placeholder'));
      })
+
+     //Fix contact well height on form validation extend
++    $('#contact .well').on('click', 'button', null, function() {
++       $('#contact .well').css('min-height', '500px');
++    })
 });
 
 //Preloader
