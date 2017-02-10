@@ -69,8 +69,6 @@ color: #fff;
 overflow: hidden;
 visibility: hidden;
 opacity: 0;
--webkit-transform: translateZ(0);
-transform: translateZ(0);
 -webkit-transition: all .1s ease-in-out;
 transition: all .1s ease-in-out;
 }
