@@ -126,6 +126,10 @@ color:#fcd000;
 color:#006400;
 }
 
+#social a.waka:hover{
+color:#E1FFFF;
+}
+
 #contact {
 opacity:0;
 padding-bottom:10vh;
