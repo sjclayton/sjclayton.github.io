@@ -414,9 +414,14 @@ text-align:right;
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
+  backface-visibility: hidden;
   -webkit-transform: perspective(1px) translateZ(0);
   -ms-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
+  -webkit-filter: blur(0);
+  -ms-filter: blur(0);
+  filter: blur(0);
+  box-shadow: 0 0 1px transparent;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
