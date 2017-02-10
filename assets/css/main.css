@@ -396,7 +396,6 @@ text-align:right;
   -webkit-transform: perspective(1px) translateZ(0);
   -ms-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
 }
 .hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
   -webkit-animation-name: hvr-pulse;
