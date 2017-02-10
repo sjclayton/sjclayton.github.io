@@ -62,7 +62,7 @@ $(function(){
      })
 
      //Equal height wells
-     $('.well').matchHeight()
+     $('.well').matchHeight();
 
 });
 
