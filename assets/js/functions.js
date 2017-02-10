@@ -1,12 +1,4 @@
 $(function(){
-     //Preloader
-     $(window).on('load', function() {
-       $('#loading').delay(1000).fadeOut('slow', function (){
-         $('.navbar-default').css('display', 'inline');
-         $('.navbar-default').addClass('animated fadeInDown');
-         $('#start').addClass('animated fadeIn');
-       });
-     })
 
      //Close mobile nav on link click
      var navMobile = $('.navbar-collapse');
@@ -71,6 +63,15 @@ $(function(){
 
      //Equal height wells
      $('.well').matchHeight();
+});
+
+//Preloader
+$(window).on('load', function() {
+  $('#loading').delay(1000).fadeOut('slow', function (){
+    $('.navbar-default').css('display', 'inline');
+    $('.navbar-default').addClass('animated fadeInDown');
+    $('#start').addClass('animated fadeIn');
+  });
 });
 
 //Smooth scrolling
