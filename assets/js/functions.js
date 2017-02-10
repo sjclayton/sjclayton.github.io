@@ -64,6 +64,12 @@ $(function(){
      //Equal height wells
      $('.well').matchHeight();
 
+     //Clear form placeholders on input
+     $('input textarea').change(function(){
+        $(this).data('placeholder',$(this).attr('placeholder')).attr('placeholder','');
+     }).blur(function(){
+        $(this).attr('placeholder',$(this).data('placeholder'));
+     })
 });
 
 //Preloader
