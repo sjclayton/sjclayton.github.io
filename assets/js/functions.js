@@ -64,10 +64,6 @@ $(function(){
      //Equal height wells
      $('.well').matchHeight();
 
-     //Fix contact well height on form validation extend
-     $('#contact .well').on('click', 'button', null, function() {
-       $('#contact .well').css('min-height', '500px');
-     })
 });
 
 //Preloader
