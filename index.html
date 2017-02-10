@@ -14,9 +14,24 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body data-spy="scroll" data-target="#myNav" data-offset="180">
+<div id="loading">
+  <div id="loading-center">
+    <div id="loading-center-absolute">
+      <div class="object" id="object_one"></div>
+      <div class="object" id="object_two"></div>
+      <div class="object" id="object_three"></div>
+      <div class="object" id="object_four"></div>
+      <div class="object" id="object_five"></div>
+      <div class="object" id="object_six"></div>
+      <div class="object" id="object_seven"></div>
+      <div class="object" id="object_eight"></div>
+      <div class="object" id="object_big"></div>
+    </div>
+  </div>
+</div>
+<body>
 
-    <nav class="navbar navbar-default navbar-fixed-top animated fadeInDown navbar-smooth" id="myNav">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-smooth">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
@@ -25,12 +40,18 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="https://sjclayton.github.io" alt="Shaun J. Clayton">SJC</a>
+        <a class="navbar-brand" href="#start">SJC</a>
       </div>
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#about">About<span class="sr-only">(current)</span></a></li>
+          <li><a href="#about">About</a></li>
+          <li class="hidden-xs divider-vertical"></li>
+          <li><a href="#skills">Skills</a></li>
+          <li class="hidden-xs divider-vertical"></li>
           <li><a href="#portfolio">Portfolio</a></li>
+          <li class="hidden-xs divider-vertical"></li>
+          <li><a href="#social">Social</a></li>
+          <li class="hidden-xs divider-vertical"></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -38,86 +59,323 @@
     </nav>
 
     <div class="container-fluid">
+            <div class="row center-block animated fadeIn" id="start">
+              <div class="jumbotron clearfix">
+                <div class="col-xs-12">
+                  <img class="fadeIn img-responsive center-block" id="headshot" src="assets/img/headshot.jpg"/>
+                  <ul class="list-inline text-center" id="name">
+                    <li><h2 id="first">SHAUN</h2></li>
+                    <li><h2 id="middle">J</h2></li>
+                    <li><h2 id="last">CLAYTON</h2></li>
+                  </ul>
+                  <ul class="list-inline text-center" id="subheader">
+                    <li><h4>Front-End Developer</h4></li>
+                    <li class="hidden-xs divider-vertical"></li>
+                    <li><h4>Open-Source Advocate</h4></li>
+                    <li class="hidden-xs hidden-sm divider-vertical"></li>
+                    <li><h4>Technology Enthusiast</h4></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <div class="row center-block" id="about">
                 <div class="jumbotron clearfix">
                     <h2 class="text-center"><b>ABOUT ME</b></h2><br>
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-                      <img class="img-responsive center-block" id="headshot" src="assets/img/headshot.jpg" />
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9">
-                      <div class="well">
-                      <h3>Hi! I'm Shaun</h3><hr>
-                      <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis iure, laudantium exercitationem. Dolorem cupiditate molestiae nemo hic omnis suscipit sunt, similique aspernatur. Explicabo eaque accusantium mollitia perferendis voluptatem, quo laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                    <div class="col-xs-12 col-md-10 col-md-offset-1">
+                      <div class="well text-center">
+                      <h4>Hi I'm Shaun... an aspiring front-end developer from a small town in Ontario, Canada.</h4><hr>
+                      <h5>Having grown up in a predominantly agricultural area of Canada, it wasn't until the past few years that this area really started to become more of the technology hub it is today. Although, it was long before this time that my love of all things tech began.</h5><br>
+                      <h5>From a very young age, I've been drawn into technology somehow - especially in a time where it wasn't really as prevalent as it is today. I began my journey at the age of 8, it wasn't long after that, I got my first taste of the Internet and what would turn into a life-long passion. I learned to build a computer from my 5th grade elementary school teacher and really started to see what was possible with technology, even at that time...long before things like Google, YouTube or social media existed.</h5><br>
+                      <h5>Over the last 25 years, and having gone through various periods of time in my life where my tech interests have changed and adapted somewhat. That overwhelming initial curiosity and spark is still alive to this day, I continue to grow and explore new areas. One such realm being the potential to use my talents to create - Immersive, visually interesting, seamless UX and smooth UI for both the web and desktop / mobile applications.</h5><br>
+                      <h5>Very much a stickler for details, I'm always putting that quality to work in everything I do. You will be assured with any project I work on, that even the smallest things will not get overlooked. Achieving your ideal desired end result is what I'm passionate about, and I  strive to deliver nothing less than exactly the vision you have in mind, no matter what that might be.</h5>
                       </div>
                     </div>
                 </div>
             </div>
-            <div class="row center-block" id="portfolio">
-                <div class="jumbotron clearfix">
-                    <div class="col-xs-12">
-                      <h2 class="text-center"><b>PORTFOLIO</b></h2><br>
-                      <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#web" aria-controls="web" role="tab" data-toggle="tab">Web</a></li>
-                        <li role="presentation"><a href="#desktop" aria-controls="desktop" role="tab" data-toggle="tab">Desktop</a></li>
-                      </ul>
-                      <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane animated fadeIn active" id="web">
-                          <ul class="list-inline text-center" id="fds">
-                            <li><a href="#portfolio"><img class="img-responsive" id="thumbimg" src="assets/img/comingsoon.png" alt="..."/>...</a></li>
-                            <li><a href="#portfolio"><img class="img-responsive" id="thumbimg" src="assets/img/comingsoon.png" alt="..."/>...</a></li>
-                            <li><a href="#portfolio"><img class="img-responsive" id="thumbimg" src="assets/img/comingsoon.png" alt="..."/>...</a></li>
-                            <li><a href="#portfolio"><img class="img-responsive" id="thumbimg" src="assets/img/comingsoon.png" alt="..."/>...</a></li>
-                          </ul>
+            <div class="row center-block" id="skills">
+              <div class="jumbotron clearfix">
+                <h2 class="text-center"><b>MY SKILLS</b></h2><br>
+                <div class="row center-block">
+                  <div class="col-xs-12 col-lg-6">
+                    <div class="well">
+                      <h4 class="text-center">What I know</h4><hr>
+                      <div class="media">
+                        <div class="media-left">
+                          <img class="media-object" src="assets/img/skills/html5.png"/>
                         </div>
-                        <div role="tabpanel" class="tab-pane animated fadeIn" id="desktop">
-                          <ul class="list-inline text-center" id="fds">
-                            <li><a href="#portfolio"><img class="img-responsive" id="thumbimg" src="assets/img/comingsoon.png" alt="..."/>...</a></li>
-                            <li><a href="#portfolio"><img class="img-responsive" id="thumbimg" src="assets/img/comingsoon.png" alt="..."/>...</a></li>
-                            <li><a href="#portfolio"><img class="img-responsive" id="thumbimg" src="assets/img/comingsoon.png" alt="..."/>...</a></li>
-                            <li><a href="#portfolio"><img class="img-responsive" id="thumbimg" src="assets/img/comingsoon.png" alt="..."/>...</a></li>
-                          </ul>
+                        <div class="media-body">
+                          <h4 class="media-heading">HTML5</h4>
+                          <h5>I have used and been familiar with HTML for years, and have just only come back to it recently. It's one of those things that once you know it, it never leaves you! Who loves tables? =P</h5>
+                        </div>
+                      </div>
+                      <div class="media">
+                        <div class="media-left">
+                          <img class="media-object" src="assets/img/skills/css3.png"/>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">CSS3</h4>
+                          <h5>While I certainly wouldn't call myself a master of CSS, and I don't think there are many <strong>TRUE</strong> masters. I am learning more and more as I continue my journey.</h5>
+                        </div>
+                      </div>
+                      <div class="media">
+                        <div class="media-left">
+                          <img class="media-object" src="assets/img/skills/bootstrap.png"/>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Bootstrap</h4>
+                          <h5>I think Bootstrap is one of those things you either love or hate. I was more or less forced to figure it out without having a clue because of a project I was collaborating on. Now I have come to respect what it can do, as well as it's limitations.
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div class="col-xs-12 col-lg-6">
+                    <div class="well">
+                      <h4 class="text-center">What I'm learning</h4><hr>
+                      <div class="media">
+                        <div class="media-left">
+                          <img class="media-object" src="assets/img/skills/js.png"/>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">JavaScript</h4>
+                          <h5>I'm probably most excited to be learning JavaScript over everything else right now. It is becoming more fun and less frustrating the more I get into it. I like the ability to just write something quickly and see the results immediately.</h5>
+                        </div>
+                      </div>
+                      <div class="media">
+                        <div class="media-left">
+                          <img class="media-object" src="assets/img/skills/jquery.png"/>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">jQuery</h4>
+                          <h5>I am very quickly finding out just how powerful jQuery is, even someone with a limited amount of experience using JS can do some pretty cool things with it. I discovered and learned quite a bit about good old jQuery while building <strong>THIS</strong> site.</h5>
+                        </div>
+                      </div>
+                      <div class="media">
+                        <div class="media-left">
+                          <img class="media-object" src="assets/img/skills/sass.png"/>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Sass</h4>
+                          <h5>Sass is something that I am very interested in using for my future work. Mostly because of all the flexibility it brings to working with CSS. I'm still early on in my exploration of all its uses and features. But look out! I'm certain all my projects will be using it soon.</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <div class="row center-block">
+                  <div class="col-xs-12 col-lg-6">
+                    <div class="well">
+                      <h4 class="text-center">What I want to learn</h4><hr>
+                      <div class="media">
+                        <div class="media-left">
+                          <img class="media-object" src="assets/img/skills/python.png"/>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Python</h4>
+                          <h5><strong>THIS!!!</strong> - Not sure whether or not I should have chosen Python over Javascript for my first language, but regardless I am going to dive into it in the very near future. Maybe concurrent to my JavaScript endeavours.</h5>
+                        </div>
+                      </div>
+                      <div class="media">
+                        <div class="media-left">
+                          <img class="media-object" src="assets/img/skills/angular.png"/>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">AngularJS</h4>
+                          <h5>Definitely something I want to learn eventually, but will be further down the road yet. I already got a taste of what it looks like while working on the same project that made me get into Bootstrap. It seems very daunting to me, but I'll get there I'm sure.</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-lg-6">
+                    <div class="well">
+                      <h4 class="text-center">Tools I use</h4><hr>
+                      <div class="media">
+                        <div class="media-left">
+                          <img class="media-object" src="assets/img/skills/atom.png"/>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Atom</h4>
+                          <h5>My favourite text editor, <strong> period</strong>. Something I'm very picky about, and I've tried them all. I love Atom's extensibility and customization options. Even though I've only recently started using it, I cannot see going back to anything else.</h5>
+                        </div>
+                      </div>
+                      <div class="media">
+                        <div class="media-left">
+                          <img class="media-object" src="assets/img/skills/webstorm-logo.png"/>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">JetBrains WebStorm</h4>
+                          <h5>Not the only JetBrains package I've used, and they are all equally good. While I may not take the time to load up this IDE for all my work, it is always present on any machine I use for development. I always think there is nothing they can do to improve it, but am consistently surprised with each new version.</h5>
+                        </div>
+                      </div>
+                      <div class="media">
+                          <div class="media-left">
+                            <img class="media-object" src="assets/img/skills/photoshop.png"/>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Photoshop</h4>
+                            <h5>Not much to say here, its Photoshop. Although I've used just about every graphics package out there - open and closed source, generally preferring open-source variants. I still keep coming back to Photoshop every time, I guess maybe just because it's the most familiar.</h5>
+                          </div>
+                      </div>
+                      <div class="media">
+                          <div class="media-left">
+                            <img class="media-object" src="assets/img/skills/reload.png"/>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">Tapio Vierros' live-server</h4>
+                            <h5>A very amazing little npm package - a simple HTTP server with live reload ability for local development. I would not live without this, it comes in handy more times than I can count. Check it out if you're not already aware of it.</h5>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row center-block" id="portfolio">
+                <div class="jumbotron clearfix">
+                  <h2 class="text-center"><b>MY PORTFOLIO</b></h2><br>
+                  <div class="container-fluid">
+                    <div class="row center-block">
+                      <div class="well clearfix">
+                      <div class="col-xs-12 col-md-6 col-lg-4 block">
+                          <img src="assets/img/placeholder.jpg"/>
+                          <div class="img-rollover text-center">
+                            <h4> Project Name </h4>
+                            <h5> Project description </h5>
+                            <a href="#portfolio"><h6> LINK </h6></a>
+                          </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-lg-4 block">
+                          <img src="assets/img/placeholder.jpg"/>
+                          <div class="img-rollover text-center">
+                            <h4> Project Name </h4>
+                            <h5> Project description </h5>
+                            <a href="#portfolio"><h6> LINK </h6></a>
+                          </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-lg-4 block">
+                          <img src="assets/img/placeholder.jpg"/>
+                          <div class="img-rollover text-center">
+                            <h4> Project Name </h4>
+                            <h5> Project description </h5>
+                            <a href="#portfolio"><h6> LINK </h6></a>
+                          </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-lg-4 block">
+                          <img src="assets/img/placeholder.jpg"/>
+                          <div class="img-rollover text-center">
+                            <h4> Project Name </h4>
+                            <h5> Project description </h5>
+                            <a href="#portfolio"><h6> LINK </h6></a>
+                          </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-lg-4 block">
+                          <img src="assets/img/placeholder.jpg"/>
+                          <div class="img-rollover text-center">
+                            <h4> Project Name </h4>
+                            <h5> Project description </h5>
+                            <a href="#portfolio"><h6> LINK </h6></a>
+                          </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-lg-4 block">
+                          <img src="assets/img/placeholder.jpg"/>
+                          <div class="img-rollover text-center">
+                            <h4> Project Name </h4>
+                            <h5> Project description </h5>
+                            <a href="#portfolio"><h6> LINK </h6></a>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="row center-block" id="social">
+              <div class="jumbotron clearfix">
+                <h2 class="text-center"><b>FOLLOW ME</b></h2><br>
+                <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                  <div class="well">
+                  <h4 class="text-center">Find and follow me in <strong>ALL</strong> the places!</h4><br><br>
+                  <ul class="list-inline text-center" id="social-link">
+                    <li><a class="twit" href="https://twitter.com/sjclayton3083" target="_blank"><i class="fa fa-5x fa-twitter"></i></a><br><br><h4>Twitter</h4></li>
+                    <li><a class="ghub" href="https://github.com/sjclayton" target="_blank"><i class="fa fa-5x fa-github-alt"></i></a><br><br><h4>GitHub</h4></li>
+                    <li><a class="cpen" href="http://codepen.io/sjclayton/" target="_blank"><i class="fa fa-5x fa-codepen"></i></a><br><br><h4>CodePen</h4></li>
+                    <li><a class="fcc" href="https://www.freecodecamp.com/sjclayton" target="_blank"><i class="fa fa-5x fa-free-code-camp"></i></a><br><br><h4>freeCodeCamp</h4></li>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="row center-block" id="contact">
                 <div class="jumbotron clearfix">
                     <div class="col-xs-12">
                       <h2 class="text-center"><b>CONTACT ME</b></h2><br>
-                      <h5 class="text-center"><b><i class="fa fa-2x fa-envelope"></i><br><a href="mailto:shaun.j.clayton@gmail.com" id="body-link">SHAUN.J.CLAYTON@GMAIL.COM</a><br><br><i class="fa fa-2x fa-phone"></i><br><a href="tel:519-301-0059" id="body-link">(519)301-0059</a></b></h5>
-                      <br>
-                      <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
-
+                      <div class="col-xs-12 col-md-6">
+                        <div class="well">
+                          <br>
+                          <ul class="list-inline text-center" id="contact-link">
+                            <li><a class="email" href="mailto:shaun.j.clayton@gmail.com"><i class="fa fa-4x fa-envelope-square"></i></a></li>
+                            <li><a class="tel" href="tel:519-301-0059"><i class="fa fa-4x fa-phone-square "></i></a></li>
+                            <li><a class="lin" href="https://ca.linkedin.com/in/shaun-j-clayton" target="_blank"><i class="fa fa-4x fa-linkedin-square"></i></a></li>
+                          </ul>
+                          <br>
+                          <h4 class="text-center">For in-depth inquiries contact me at the links above</h4><hr>
+                          <h5>... or send me a brief message through the contact form... and I will do my best to respond in a timely manner.
+                          <br><br>Thank you for your interest! Hope to hear from you soon so we can figure out the way I can best assist you with <strong>YOUR</strong> next project.</h5>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6">
+                        <div class="well">
+                          <h4 class="text-center">Send a quick message!</h4><hr>
+                          <form class="form-horizontal" name="contact" action="https://formspree.io/shaun.j.clayton@gmail.com" method="POST">
+                          <fieldset>
+                            <div class="form-group">
+                              <label class="col-md-3 control-label" for="name">Name</label>
+                              <div class="col-md-9">
+                              <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-md-3 control-label" for="email">E-mail</label>
+                              <div class="col-md-9">
+                                <input id="email" name="email" type="text" placeholder="Your e-mail address" class="form-control">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-md-3 control-label" for="message">Message</label>
+                              <div class="col-md-9">
+                                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="col-md-12 text-right">
+                                <button type="submit" value="send" class="btn btn-primary btn-lg hvr-pulse">Submit</button>
+                              </div>
+                            </div>
+                          </fieldset>
+                          <input type="hidden" name="_subject" value="Portfolio Inquiry"/>
+                          <input type="text" name="_gotcha" style="display:none"/>
+                          </form>
+                        </div>
+                      </div>
                     </div>
                 </div>
             </div>
     </div>
 
 
-    <div class="footer animated fadeInUp">
+    <div class="footer">
         <div class="container-fluid">
         <div class="row clearfix">
-            <div class="col-xs-12 col-md-4" id="link-list">
-                 <ul class="list-inline">
-                     <li><h2><a class="twit " href="https://www.twitter.com/sjclayton3083" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></h2></li>
-                     <li><h2><a class="lin " href="https://ca.linkedin.com/in/shaun-j-clayton" target="_blank" title="LinkedIn"><i class="fa fa-linkedin-square"></i></a></h2></li>
-                     <li><h2><a class="gh " href="https://github.com/sjclayton" target="_blank" title="Github"><i class="fa fa-github-alt"></i></a></h2></li>
-                     <li><h2><a class="cp " href="http://codepen.io/sjclayton" target="_blank" title="Codepen"><i class="fa fa-codepen"></i></a></h2></li>
-                     <li><h2><a class="fcc " href="https://www.freecodecamp.com/sjclayton" target="_blank" title="freeCodeCamp"><i class="fa fa-free-code-camp"></i></a></h2></li>
-                     <li><h2><a class="stats " href="stats.html" target="_blank" title="My Coding Stats"><i class="fa fa-bar-chart"></i></a></h2></li>
-                 </ul>
+            <div class="col-xs-12 col-md-4">
             </div>
             <div class="col-xs-12 col-md-4">
                   <h5 class="text-center"><i class="fa fa-copyright"></i>2016-2017 | Designed by Shaun</h5><br>
             </div>
             <div class="col-xs-12 col-md-4 text-justify">
-                  <ul class="list-inline">
+                  <ul class="list-inline" id="built-with">
                     <li><h5>Built With</h5></li>
-                    <li><a class="" href="https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5" target="_blank" title="HTML5"><img src="assets/img/html5logo.png"/></a></li>
-                    <li><a class="" href="https://developer.mozilla.org/en/docs/Web/CSS/CSS3" target="_blank" title="CSS3"><img src="assets/img/css3logo.png"/></a></li>
-                    <li><a class="" href="http://www.getbootstrap.com" target="_blank" title="Bootstrap"><img src="assets/img/bslogo.png"/></a></li>
-                    <li><a class="" href="https://jquery.com" target="_blank" title="jQuery"><img src="assets/img/jquerylogo.png"/></a></li>
+                    <li><img src="assets/img/footer/html5logo.png"/></li>
+                    <li><img src="assets/img/footer/css3logo.png"/></li>
+                    <li><img src="assets/img/footer/bslogo.png"/></li>
+                    <li><img src="assets/img/footer/jquerylogo.png"/></li>
                   </ul>
             </div>
         </div>
@@ -126,7 +384,10 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js" integrity="sha256-UOSXsAgYN43P/oVrmU+JlHtiDGYWN2iHnJuKY9WD+Jg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" integrity="sha256-a/H26zcixe1svu2fYax7ANJMSzGYyJNI52hKKYJTar8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="assets/js/functions.js"></script>
+    <script src="assets/js/form-validation.js"></script>
 </body>
 </html>

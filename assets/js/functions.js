@@ -1,27 +1,80 @@
 $(function(){
-     //Close mobile nav on link click
-     var navMobile = $(".navbar-collapse");
+     //Preloader
+     $(window).on('load', function() {
+       $('#loading').delay(1000).fadeOut('slow', function (){
+         $('.navbar-default').css('display', 'inline');
+         $('.navbar-default').addClass('animated fadeInDown');
+       });
+     })
 
-     navMobile.on("click", "a", null, function () {
+     //Close mobile nav on link click
+     var navMobile = $('.navbar-collapse');
+
+     navMobile.on('click', 'a', null, function () {
          navMobile.collapse('hide');
      })
 
-     //Sequentially fade in portfolio images on scroll
-     var waypoint = $('#portfolio').waypoint(function(direction) {
-       $('#fds img').each(function(i) {
-         $(this).delay((i++) * 300).fadeTo(1000, 1); });
-     }, {
-       offset: '50%'
+
+     //Fix navbar hover bug (hacky)
+     $('a.navbar-brand').hover(function () {
+       $(this).css( 'color', '#05e707');
+       $('a.navbar-brand').mouseleave(function () {
+         $(this).css( 'color', 'white');
+       })
+     })
+     $('.navbar-nav li a').hover(function () {
+       $(this).toggleClass('hvr-pulse');
+       $(this).css( 'color', '#05e707');
+       $('.navbar-nav li a').mouseleave(function () {
+         $(this).css( 'color', 'white');
+       })
      })
 
-     //Tooltips for link titles
-     $('a').tooltip({placement: 'top', trigger: 'hover'})
+     //Start block animations
+     $('#first').delay(3000).fadeTo(1000, 1)
+     $('#middle').delay(3500).fadeTo(1000, 1)
+     $('#last').delay(4000).fadeTo(1000, 1)
+     $('#subheader').delay(5000).fadeTo(1000, 1)
+
+
+     //Fade sections in as visible
+     var aboutWaypoint = $('#about').waypoint(function(direction) {
+       $('#about').addClass('animated fadeInLeft');
+     } , {
+       offset: '40%'
+     })
+
+     var skillsWaypoint = $('#skills').waypoint(function(direction) {
+       $('#skills').addClass('animated fadeInRight');
+     } , {
+       offset: '75%'
+     })
+
+     var portfolioWaypoint = $('#portfolio').waypoint(function(direction) {
+       $('#portfolio').addClass('animated fadeInLeft');
+     }, {
+       offset: '75%'
+     })
+
+     var socialWaypoint = $('#social').waypoint(function(direction) {
+       $('#social').addClass('animated fadeInRight');
+     }, {
+       offset: '75%'
+     })
+
+     var contactWaypoint = $('#contact').waypoint(function(direction) {
+       $('#contact').addClass('animated fadeInLeft');
+     }, {
+       offset: '75%'
+     })
+
+     //Equal height wells
+     $('.well').matchHeight();
 });
 
 //Smooth scrolling
-$(".navbar-smooth li a[href^='#']").on('click', function(event) {
-  var target;
-  target = this.hash;
+$(".navbar-smooth a[href^='#']").on('click', function(event) {
+  var target = this.hash;
 
   event.preventDefault();
 
